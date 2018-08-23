@@ -1,0 +1,58 @@
+.d-none {
+  display: none;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.nav-right {
+  margin-left: auto;
+}
+
+nav li {
+  padding: 0 10px;
+}
+
+nav {
+  background: darkgrey;
+  padding: 20px;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .d-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-right {
+    margin-left: inherit;
+  }
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+}
